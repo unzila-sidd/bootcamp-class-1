@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: installing surge
-        run: npm install -g surge
+        run: npm install --global surge
       - name: deploying using surge
         run: surge ./ bootcamp-unzila.surge.sh --token $ {{ secrects.SURGE_TOKEN }}
     
