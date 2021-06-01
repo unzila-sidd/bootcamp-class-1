@@ -34,5 +34,5 @@ jobs:
         run: npm install -g surge
       - name: deploying using surge
         run: surge ./ bootcamp-unzila.surge.sh --token $ {{ secrects.SURGE_TOKEN }}
-    |
+    
          
